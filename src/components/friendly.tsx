@@ -50,7 +50,7 @@ export default function Friendly({ formInfo, hidden, setVisible }: Props) {
           <div>{formInfo.firstName}</div>
         </div>
       </div>
-       <div className="text-center font-bold text-lg">Friendly</div>
+       <div className="text-center font-bold text-lg self-end">Friendly</div>
     </div>
   );
 }

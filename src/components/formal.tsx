@@ -57,7 +57,7 @@ export default function Formal({ formInfo, hidden, setVisible }: Props) {
           </div>
         </div>
       </div>
-      <div className="text-center font-bold text-lg">Formal</div>
+      <div className="text-center font-bold text-lg self-end">Formal</div>
     </div>
   );
 }

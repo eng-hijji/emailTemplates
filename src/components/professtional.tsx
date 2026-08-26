@@ -53,7 +53,7 @@ export default function Professional({ formInfo,hidden, setVisible}: Props) {
           </div>
         </div>
       </div>
-       <div className="text-center font-bold text-lg">Professional</div>
+       <div className="text-center font-bold text-lg self-end">Professional</div>
     </div>
   );
 }
