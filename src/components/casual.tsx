@@ -51,6 +51,7 @@ export default function Casual({ formInfo, hidden, setVisible }: Props) {
           </div>
         </div>
       </div>
+         <div className="text-center font-bold text-lg">Casual</div>
     </div>
   );
 }
