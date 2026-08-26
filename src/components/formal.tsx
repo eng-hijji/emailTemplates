@@ -25,9 +25,20 @@ export default function Formal({ formInfo, hidden, setVisible }: Props) {
   }
   return (
     <div
-      className={`border rounded-xl p-3 grid gap-3 cursor-pointer hover:bg-slate-100 hover:scale-105 transition duration-300 ease ${hidden.status ? (hidden.template === "Formal" ? "block" : "hidden") : ""} `}
+      className={`relative border rounded-xl p-3 grid gap-3 cursor-pointer hover:bg-slate-100 hover:scale-105 transition duration-300 ease ${hidden.status ? (hidden.template === "Formal" ? "block" : "hidden") : ""} `}
       onClick={set}
     >
+      {hidden.status && hidden.template === "Formal" && (
+        <span
+          onClick={(e) => {
+            e.stopPropagation();
+            setVisible({ status: false, template: "" });
+          }}
+          className="absolute top-3 right-4 text-xl font-bold cursor-pointer hover:text-red-500"
+        >
+          x
+        </span>
+      )}
       <h1 className="text-lg font-semibold border-b border-gray-300 pb-3">
         {formInfo.subject}
       </h1>
